@@ -51,7 +51,7 @@ window.TX_CONFIG = {
   // ---- Where the data lives ----
   // "demo"     = works instantly, fake data saved in YOUR browser only (great for learning/testing)
   // "supabase" = real online database shared by everyone (fill in the two keys below)
-  mode: "demo",
+  mode: "supabase",
   supabaseUrl: "",                // e.g. https://abcdxyz.supabase.co
   supabaseAnonKey: "",            // the "anon public" key from Supabase → Project Settings → API
 
