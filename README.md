@@ -38,7 +38,7 @@ Tip: keep it under ~4 MB, 6 seconds, no sound needed (it autoplays muted and loo
 
 ## Before you launch (legal + safety checklist)
 1. Fill in `business` and `legal.dataRegion` in `js/config.js` (the yellow "DRAFT" bar on the legal pages disappears when done).
-2. Set `mode: "supabase"` and re-run `supabase/schema.sql` (adds consent columns). NEVER launch in demo mode: demo data lives in each visitor's own browser and the demo admin password is public.
+2. Set `mode: "supabase"` and re-run `supabase/schema.sql` (adds consent columns and the password-recovery table/functions). NEVER launch in demo mode: demo data lives in each visitor's own browser and the demo admin password is public.
 3. Replace `assets/toast.jpg` with a photo you own or are licensed to use.
 4. Check `legal.allergens` is true for YOUR recipe.
 5. Put the real bank details in Admin → Settings (account name should match your business or your own name).

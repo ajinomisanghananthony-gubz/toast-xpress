@@ -164,7 +164,36 @@
       <div class="field"><label for="lPass">Password</label><input id="lPass" type="password" autocomplete="current-password" placeholder="Your password"></div>
       <p class="err" data-err role="alert"></p>
       <button class="btn btn-orange btn-block btn-lg" type="submit">Log in</button>
+      <p class="m-switch"><button type="button" class="link" data-switch="forgot">Forgot your password?</button></p>
       <p class="m-switch">New here? <button type="button" class="link" data-switch="signup">Create an account</button></p>
+    </form>
+
+    <form class="pane" data-pane="f1" novalidate hidden>
+      <h3>Forgot your password?</h3>
+      <p class="sub">Enter your phone number and we'll ask your recovery question.</p>
+      <div class="field"><label for="fPhone">Phone number</label><input id="fPhone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="080 1234 5678"></div>
+      <p class="err" data-err role="alert"></p>
+      <button class="btn btn-orange btn-block btn-lg" type="submit">Continue</button>
+      <p class="m-switch"><button type="button" class="link" data-switch="login">Back to log in</button></p>
+    </form>
+
+    <form class="pane" data-pane="f2" novalidate hidden>
+      <h3>Answer your question</h3>
+      <p class="sub" id="fQ" style="font-weight:700"></p>
+      <div class="field"><label for="fA">Your answer</label><input id="fA" autocomplete="off" maxlength="60" placeholder="Your answer"></div>
+      <div class="field"><label for="fP1">New password</label><input id="fP1" type="password" autocomplete="new-password" placeholder="At least 6 characters"></div>
+      <div class="field"><label for="fP2">Repeat new password</label><input id="fP2" type="password" autocomplete="new-password" placeholder="Type it again"></div>
+      <p class="hint" id="fLeft"></p>
+      <p class="err" data-err role="alert"></p>
+      <button class="btn btn-orange btn-block btn-lg" type="submit">Set new password</button>
+      <p class="m-switch"><button type="button" class="link" data-switch="login">Back to log in</button></p>
+    </form>
+
+    <form class="pane" data-pane="f3" hidden>
+      <h3>Contact us to reset</h3>
+      <p class="sub" id="fContact">We can't reset this one automatically. Please contact us and we'll help you get back in.</p>
+      <a class="btn btn-orange btn-block btn-lg" data-tel href="#">Call us</a>
+      <p class="m-switch"><button type="button" class="link" data-switch="login">Back to log in</button></p>
     </form>
 
     <form class="pane" data-pane="s2" novalidate hidden>
@@ -185,6 +214,7 @@
       <p class="sub">At least 6 characters. You'll use it to log in.</p>
       <div class="field"><label for="sPass">Password</label><input id="sPass" type="password" autocomplete="new-password" placeholder="Create password"></div>
       <div class="field"><label for="sPass2">Repeat password</label><input id="sPass2" type="password" autocomplete="new-password" placeholder="Type it again"></div>
+      <div id="signupRecovery"></div>
       <p class="err" data-err role="alert"></p>
       <div class="m-row"><button class="btn btn-ghost" type="button" data-back>Back</button><button class="btn btn-orange" type="submit">Next</button></div>
     </form>

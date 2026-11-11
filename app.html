@@ -60,6 +60,12 @@
     </div>
     <p class="hint" style="margin-bottom:8px;font-weight:700">Change your icon</p>
     <div class="icon-grid" id="profileIcons" role="radiogroup"></div>
+    <details class="rec" style="margin-top:16px">
+      <summary class="hint" style="font-weight:700;cursor:pointer">Password recovery question <span id="recState"></span></summary>
+      <form id="recForm" novalidate style="margin-top:10px"><div id="recFields"></div>
+        <p class="err" id="recErr" role="alert"></p>
+        <button class="btn btn-ink btn-sm" type="submit">Save recovery question</button></form>
+    </details>
     <div class="m-row" style="margin-top:18px">
       <button class="btn btn-ghost" type="button" data-close>Close</button>
       <button class="btn btn-ink" type="button" id="logoutBtn">Log out</button>
