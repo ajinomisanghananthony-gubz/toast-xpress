@@ -33,7 +33,7 @@ window.TX_CONFIG = {
   video: {
     mp4: "assets/hero.mp4",
     webm: "assets/hero.webm",
-    poster: "assets/toast.jpg",   // shown while loading / if there's no video. Best: a frame from your video.
+    poster: "assets/toast-new.jpg",   // shown while loading / if there's no video. Best: a frame from your video.
     ratio: "4 / 5",                // your video's shape: "4 / 5" tall, "1 / 1" square, "16 / 9" wide, "9 / 16" phone-tall
     text: "TOAST EXPRESS"         // the wordmark placed over the video. "" = no text
   },
