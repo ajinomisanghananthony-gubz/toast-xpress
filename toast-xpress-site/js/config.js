@@ -33,7 +33,7 @@ window.TX_CONFIG = {
   video: {
     mp4: "assets/hero.mp4",
     webm: "assets/hero.webm",
-    poster: "assets/toast.jpg",   // shown while loading / if there's no video. Best: a frame from your video.
+    poster: "poster: "poster: "assets/toast.jpg",",",   // shown while loading / if there's no video. Best: a frame from your video.
     ratio: "4 / 5",                // your video's shape: "4 / 5" tall, "1 / 1" square, "16 / 9" wide, "9 / 16" phone-tall
     text: "TOAST EXPRESS"         // the wordmark placed over the video. "" = no text
   },
@@ -51,9 +51,9 @@ window.TX_CONFIG = {
   // ---- Where the data lives ----
   // "demo"     = works instantly, fake data saved in YOUR browser only (great for learning/testing)
   // "supabase" = real online database shared by everyone (fill in the two keys below)
-  mode: "demo",
-  supabaseUrl: "",                // e.g. https://abcdxyz.supabase.co
-  supabaseAnonKey: "",            // the "anon public" key from Supabase → Project Settings → API
+  mode: "supabase",
+  supabaseUrl: "https://xxpxzwzabxngplooqtqr.supabase.co",                // e.g. https://abcdxyz.supabase.co
+  supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh4cHh6d3phYnhuZ3Bsb29xdHFyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQyOTk2MTYsImV4cCI6MjEwOTg3NTYxNn0.oh-rJKvqET_lQevdxKi1AkrrYiV-dug2lhyWkvkGGEg",            // the "anon public" key from Supabase → Project Settings → API
 
   // Students log in with their phone number. Supabase wants an email, so we make a private one:
   // 08012345678  →  08012345678@toastxpress.app   (no email is ever sent)
